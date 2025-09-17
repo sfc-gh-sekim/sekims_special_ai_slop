@@ -17,6 +17,7 @@ jobs:
         uses: snowflakedb/snowflake-cli-action@v2.0
         with:
           use-oidc: true
+          cli-version: "3.11.0"
       - name: test connection
         env:
           SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
